@@ -1,7 +1,8 @@
-package weave.ui.pages;
+package weave.pages;
 
 import org.openqa.selenium.By;
-import weave.ui.common.BrowserUtil;
+import weave.common.BrowserUtil;
+
 import static org.testng.Assert.assertEquals;
 
 public class InviteUser {

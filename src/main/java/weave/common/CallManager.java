@@ -1,4 +1,4 @@
-package weave.ui.common;
+package weave.common;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;

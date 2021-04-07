@@ -1,8 +1,8 @@
-package weave.ui.pages;
+package weave.pages;
 
 import org.openqa.selenium.By;
-import weave.ui.common.BrowserUtil;
-import weave.ui.common.Constants;
+import weave.common.BrowserUtil;
+import weave.common.Constants;
 
 public class Login {
    public static final String PATH = "/admin/login";

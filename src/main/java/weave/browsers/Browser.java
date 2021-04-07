@@ -1,7 +1,7 @@
-package weave.ui.browsers;
+package weave.browsers;
 
 import org.openqa.selenium.WebDriver;
-import weave.ui.common.EnvManager;
+import weave.common.EnvManager;
 
 public interface Browser {
    String DRIVER_LOCATION = "src/test/resources/drivers/";

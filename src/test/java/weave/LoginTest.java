@@ -1,8 +1,8 @@
-package weave.ui;
+package weave;
 
 import org.testng.annotations.Test;
-import weave.ui.common.EnvManager;
-import weave.ui.pages.Login;
+import weave.common.EnvManager;
+import weave.pages.Login;
 
 public class LoginTest extends BaseSuite {
 

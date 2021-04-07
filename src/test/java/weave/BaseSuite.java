@@ -1,4 +1,4 @@
-package weave.ui;
+package weave;
 
 import com.google.common.io.Files;
 import org.apache.commons.lang3.StringUtils;
@@ -8,7 +8,8 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import weave.ui.common.BrowserUtil;
+import weave.common.BrowserUtil;
+
 import java.io.File;
 import java.io.IOException;
 import static java.lang.String.format;

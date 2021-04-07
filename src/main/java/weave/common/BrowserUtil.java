@@ -1,4 +1,4 @@
-package weave.ui.common;
+package weave.common;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

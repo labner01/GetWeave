@@ -2,8 +2,8 @@ package weave.api;
 
 import org.apache.http.HttpStatus;
 import org.testng.annotations.BeforeClass;
-import weave.ui.common.CallManager;
-import weave.ui.common.EnvManager;
+import weave.common.CallManager;
+import weave.common.EnvManager;
 import java.util.HashMap;
 import java.util.Map;
 

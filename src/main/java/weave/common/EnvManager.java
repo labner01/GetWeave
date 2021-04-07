@@ -1,4 +1,4 @@
-package weave.ui.common;
+package weave.common;
 
 import io.github.cdimascio.dotenv.Dotenv;
 import org.apache.commons.lang3.StringUtils;

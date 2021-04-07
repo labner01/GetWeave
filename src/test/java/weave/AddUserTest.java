@@ -1,12 +1,12 @@
-package weave.ui;
+package weave;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import weave.ui.common.Constants;
-import weave.ui.common.EnvManager;
-import weave.ui.common.Utils;
-import weave.ui.pages.Dashboard;
-import weave.ui.pages.Login;
+import weave.common.EnvManager;
+import weave.common.Utils;
+import weave.common.Constants;
+import weave.pages.Dashboard;
+import weave.pages.Login;
 
 public class AddUserTest extends BaseSuite {
    private Utils utils = new Utils();

@@ -1,4 +1,4 @@
-package weave.ui.browsers;
+package weave.browsers;
 
 public class OperatingSystemDetector {
 

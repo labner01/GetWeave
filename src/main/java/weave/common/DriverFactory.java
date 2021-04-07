@@ -1,7 +1,7 @@
-package weave.ui.common;
+package weave.common;
 
 import org.openqa.selenium.WebDriver;
-import weave.ui.browsers.*;
+import weave.browsers.*;
 
 public final class DriverFactory {
 

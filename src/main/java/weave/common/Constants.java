@@ -1,4 +1,4 @@
-package weave.ui.common;
+package weave.common;
 
 public final class Constants {
    public static final String BASE_URI = "https://app.getweave.com";

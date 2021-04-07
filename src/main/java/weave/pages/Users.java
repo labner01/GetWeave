@@ -1,8 +1,9 @@
-package weave.ui.pages;
+package weave.pages;
 
 import org.openqa.selenium.By;
-import weave.ui.common.BrowserUtil;
-import weave.ui.common.Utils;
+import weave.common.Utils;
+import weave.common.BrowserUtil;
+
 import static org.testng.Assert.*;
 
 public class Users {
