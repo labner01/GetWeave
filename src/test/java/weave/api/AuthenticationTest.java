@@ -16,13 +16,11 @@ public class AuthenticationTest {
 
    @Test
    public void happyPath() {
-      System.out.println("\tAuthenticationTest - ThreadId: " + Thread.currentThread().getId());
       assertNotNull(getToken());
    }
 
    @Test
    public void getTokenMultipleTimes_TokensAreDifferent() {
-      System.out.println("\tAuthenticationTest - ThreadId: " + Thread.currentThread().getId());
       assertNotEquals(getToken(), getToken());
    }
 
@@ -35,7 +33,6 @@ public class AuthenticationTest {
 
    @Test(dataProvider = "authParameters")
    public void invalidCases(String username, String password) {
-      System.out.println("\tAuthenticationTest - ThreadId: " + Thread.currentThread().getId());
       callManager.getAuthToken(getBody(username, password))
          .then()
          .statusCode(HttpStatus.SC_UNAUTHORIZED);

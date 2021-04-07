@@ -13,7 +13,6 @@ public class UsersTest extends BaseApi {
 
    @Test
    public void getUserHappyPath() {
-      System.out.println("\tUsersTest - ThreadId: " + Thread.currentThread().getId());
       callManager.getRequest(USER_PATH + USER_ID, autoToken, LOCATION_ID)
          .then()
          .statusCode(HttpStatus.SC_OK)
@@ -48,7 +47,6 @@ public class UsersTest extends BaseApi {
 
    @Test(dataProvider="invalidParams")
    public void getUserInvalidAuthToken(String token) {
-      System.out.println("\tUsersTest - ThreadId: " + Thread.currentThread().getId());
       callManager.getRequest(USER_PATH + USER_ID, token , LOCATION_ID)
          .then()
          .statusCode(HttpStatus.SC_UNAUTHORIZED);
@@ -56,7 +54,6 @@ public class UsersTest extends BaseApi {
 
    @Test(dataProvider="invalidParams")
    public void getUserInvalidLocationId(String locationId) {
-      System.out.println("\tUsersTest - ThreadId: " + Thread.currentThread().getId());
       callManager.getRequest(USER_PATH + USER_ID, autoToken, locationId)
          .then()
          .statusCode(HttpStatus.SC_FORBIDDEN);
@@ -64,7 +61,6 @@ public class UsersTest extends BaseApi {
 
    @Test
    public void getUserUserId() {
-      System.out.println("\tUsersTest - ThreadId: " + Thread.currentThread().getId());
       callManager.getRequest(USER_PATH + "invalidUserId", autoToken, LOCATION_ID)
          .then()
          .statusCode(HttpStatus.SC_BAD_REQUEST);

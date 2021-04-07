@@ -70,3 +70,17 @@
    - target/surefire-reports/index.html
 14. I have started SauceLabs implementation but did not have enough time. SauceLabs implementation is not that difficult since I have done it in my current and the previous companies.
 15. Both UI and API tests have their own Base class. These classes have some functionalities other test classes may want to use such as getting screenshots after failing UI tests etc.
+
+## Issues
+1. I would like to test if I could access others information using my localizationId. I don't have another one to test it.
+2. It looks like whenever I create a new token, the system does not invalidate the old one. This might be a problem.
+3. Some UI pages don't have good identifiers. This makes it difficult or fragile the locators.
+4. After adding or deleting users, we get short notifications on the top right corner. They block the logout section and the user has to wait or close them. There are better ways to implement notifications.
+5. Email validation accepts these emails as valid ones.
+   - %@a.ab, -@a.com, *@a.ab, &@a.ab, +@a.ab, =@a.ab, '@a.ab, "@a.ab, {@a.ab, }@a.ab, #@a.ab, $@a.ab, %@a.ab, ^@a.ab, /@a.ab, ?@a.ab, |@a.ab
+6. Fax History has 2 Date Pickers. I assume these for getting the report between those days. You can set the end date before the start date and there is no warning for the user.
+7. Call Records has the same issue.
+8. Call Blocking
+   - I entered 000000 and 999999 as phone numbers and there were no validations.
+9. Ben I talked about uploading csv files for customers. After the upload, we could not find where they went.
+10. 

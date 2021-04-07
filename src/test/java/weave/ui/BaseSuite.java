@@ -7,7 +7,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import weave.ui.common.BrowserUtil;
 import java.io.File;
@@ -28,12 +27,8 @@ public abstract class BaseSuite {
    }
 
    @AfterClass
-   public void tearDownSuite() {
-      System.out.println("\ttearDownSuite - ThreadId: " + Thread.currentThread().getId());
-      quitDriver();
-   }
-
-   private void quitDriver() {
+   public void tearDown() {
+      System.out.println("\tAfterClass - ThreadId: " + Thread.currentThread().getId());
       if (browserUtil != null) {
          browserUtil.quitDriver();
       }
