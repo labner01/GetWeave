@@ -76,11 +76,20 @@
 2. It looks like whenever I create a new token, the system does not invalidate the old one. This might be a problem.
 3. Some UI pages don't have good identifiers. This makes it difficult or fragile the locators.
 4. After adding or deleting users, we get short notifications on the top right corner. They block the logout section and the user has to wait or close them. There are better ways to implement notifications.
-5. Email validation accepts these emails as valid ones.
+5. Email validation accepts these emails as valid ones. (Add user)
    - %@a.ab, -@a.com, *@a.ab, &@a.ab, +@a.ab, =@a.ab, '@a.ab, "@a.ab, {@a.ab, }@a.ab, #@a.ab, $@a.ab, %@a.ab, ^@a.ab, /@a.ab, ?@a.ab, |@a.ab
+   - %@a.commmmmmmmmmmmmmmmmmm
 6. Fax History has 2 Date Pickers. I assume these for getting the report between those days. You can set the end date before the start date and there is no warning for the user.
 7. Call Records has the same issue.
 8. Call Blocking
    - I entered 000000 and 999999 as phone numbers and there were no validations.
-9. Ben I talked about uploading csv files for customers. After the upload, we could not find where they went.
-10. 
+9. Ben and I talked about uploading csv files for customers. After the upload, we could not find where they went.
+10. During login if credentials are incorrect, we just display the error message for a short period of time and the app is clearing up entered credentials. If the user does not pay attention, it is easy to miss the error message. This will create confusion.
+11. I did not add UI tests for fail login cases because these tests can be written with unit tests (js unit tests). Testing fail cases with selenium is a lot more expensive.
+12. When you click on "Forgot your password", I can click on the "Reset" button even without entering anything in the email field.
+13. It looks like the email validation is very weak when we try to reset the password. I entered a@a amd 1@a and they were accepted. Again these validations can be done in unit level.
+14. Login page, when you come to this page, the "login" button is still clickable without entering anything as credentials. The user can click on it and nothing happens and then it becomes disabled.
+15. On the login page, it looks like there is not much validation. I entered just a space for both username and password and they were accepted and login button got activated.
+16. Login page does not validate entered emails. Again this validation can be done with unit tests. (you can enter just numbers, period, basically anything)
+17. "Unable to login" is not a descriptive error message. It can be more specific.
+18. 
