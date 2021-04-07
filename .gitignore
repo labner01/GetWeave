@@ -1,0 +1,13 @@
+.idea/
+*.class
+target/
+test-output/
+*.iml
+.env
+*.log
+resources/screenshots/*
+!resources/screenshots/.dontDelete
+/src/test/resources/drivers/*
+
+# Drivers #
+chromedriver

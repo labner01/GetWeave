@@ -1,0 +1,37 @@
+
+{
+  "da": {
+    "UserID": "b23c8d64-458c-4e4f-b838-c1cce3ffbae7",
+    "Username": "tafpro@gmail.com",
+    "FirstName": "Leo",
+    "LastName": "Abner",
+    "Type": "practice",
+    "Status": "Legacy",
+    "MobileNumber": "",
+    "MobileNumberVerifiedAt": null,
+    "Roles": [
+      {
+        "ID": 4,
+        "Name": "Admin",
+        "Type": "practice",
+        "Permissions": [
+          20,
+          408,
+          409,
+          407,
+          414,
+          30,
+          21,
+          403,
+          400,
+          401,
+          402,
+          404,
+          412,
+          413,
+          411
+        ]
+      }
+    ]
+  }
+}
